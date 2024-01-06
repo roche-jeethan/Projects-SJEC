@@ -1,6 +1,12 @@
 # Sceptix Mark-I
 ### Preface
 This is our first Git Repository and want to learn more about GitHub! by creating a project for recruitment process for SCEPTIX
+
+### About this project:
+
+
+
+### People Building this project
 <br>
 <b> User 1:  </b> <i> Jeethan Roche </i> <br>
 <b> User 2: </b> <i> Aashna Ferrao </i> <br>
