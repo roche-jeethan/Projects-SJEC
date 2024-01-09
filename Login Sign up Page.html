@@ -17,18 +17,16 @@
                     <header>Login</header>
                     <form action="#">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="email" placeholder="Email" class="input" id="email">
                         </div>
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
+                            <input type="password" placeholder="Password" class="password_lg" id="password">
                         </div>
                         <div class="form-link">
                             <a href="#" class="forgot-pass">Forgot password?</a>
                         </div>
                         <div class="field button-field">
-                            <a src="https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/Landing%20Page.html">
-                            <button>Login</button>
-                            </a>
+                            <button onclick="checkData() location.href='nextpage.html'">Login</button>
                         </div>
                     </form>
                     <div class="form-link">
@@ -54,26 +52,22 @@
                     <header>Signup</header>
                     <form action="#">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="email" placeholder="Email" id="inputEmail" class="input">
                         </div>
                         <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="password">
+                            <input type="password" placeholder="Create password" id="inputPassword" class="password_sg">
                         </div>
                         <div class="field button-field">
-                            <a src="https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/Landing%20Page.html">
-                            <button>Signup</button>
-                            </a>
+                            <button id="signupButton" location.href='nextpage.html'>Signup</button>
                         </div>
                     </form>
+            
                     <div class="form-link">
                         <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
                     </div>
                 </div>
                 <div class="line"></div>
-                
+                            
                 <div class="media-options">
                     <a href="#" class="field google">
                         <img src="">
@@ -81,8 +75,8 @@
                     </a>
                 </div>
             </div>
-        </section>
-        <script src="sceptix.js"></script>
+            
+            <script src="sceptix.js"></script>
     </body>
 
 
