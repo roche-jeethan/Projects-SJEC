@@ -4,7 +4,9 @@ const links = document.querySelectorAll(".link");
 links.forEach(link => { link.addEventListener
     ("click", () => { forms.classList.toggle("show-signup"); }) })
 
-    document.getElementById('signupButton').addEventListener('click', addData);
+    window.addEventListener('load', function() {
+        document.getElementById('signupButton').addEventListener('click', addData);
+    });
 
     function addData(){
         var email=document.getElementById('inputEmail').value;
@@ -33,3 +35,6 @@ links.forEach(link => { link.addEventListener
             alert('User not Found!');
         }
     }
+    window.addEventListener('load', function() {
+        document.getElementById('loginButton').addEventListener('click', checkData);
+    });
