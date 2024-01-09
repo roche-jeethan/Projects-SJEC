@@ -89,7 +89,7 @@
     <h1 class="c"><span>Contact Us</span></h1>
     <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais" class="cpic">
         <div class="row">
-                <form action="">
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <input type="text" name="" placeholder="Name" class="box"/>
                     <input type="email" name="" placeholder="Email" class="box"/>
                     <input type="text" name="" placeholder="Number" class="box"/>
@@ -97,7 +97,22 @@
                     <input type="submit" value="Send" class="button">
                 </form>
         </div>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "test@gmail.com",
+                        Password : "password",
+                        To : 'meriylfreya@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : "Enquiry",
+                        Body : "And this is the body"
+                    }).then(
+                      message => alert(message)
+                    );
+        }
+    </script>
 </section>
 
 
