@@ -4,13 +4,319 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeneHarvest</title>
-    <link rel="stylesheet" href="lp.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --lightblue:blue;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins';
+    border:none;
+    outline:none;
+    text-decoration:none;
+    text-transform: capitalize;
+    transition:.2s linear;
+}
+html
+{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:white;
+    padding: 0.25rem 0.5rem;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow:0.5rem .1rem rgba(0,0,0,.1) 
+}
+.log{
+    width:50px;
+    float:left;
+}
+header .logo{
+    font-size:3rem;
+    color: black;
+    font-weight: bolder;
+}
+header .logo span{
+    color:var(--lightblue);
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.nav-item {
+    margin-right: 3rem; 
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+header .navbar a{
+    font-size:2rem;
+    padding:0 .5rem;
+    color:black;
+}
+header .navbar a:hover{
+    color:var(--lightblue);
+}
+section{
+    padding:2rem 9%;
+}
+.home{
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+}
+.cover{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding-top: 50px;
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home .content{
+    max-width:50rem;
+    }
+.home .content h3{
+    font-size:6rem;
+    color:black; 
+}
+.home .content span{
+    font-size:3rem;
+    color:var(--lightblue);
+    padding:1rem 0;
+    line height:1.5;
+}
+.btn{
+    display:block;
+    margin-top:1rem;
+    width:30%;
+    border-radius:5rem;
+    background:orangered;
+    color:white;
+    padding:.9rem 3.5rem;
+    font-size:1.7rem;
+}
+.btn:hover{
+    background: orange;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.content p{
+    font-size:1.5rem;
+    display:flex;
+    justify-content:space-between;
+    padding-left:65rem;
+    margin-top:10px;
+    text-align:justify;
+}
+.heading span{
+    margin-top:10px;
+    color:orangered;
+    font-size:3rem;
+    top: -20px;
+    padding-left:65rem ;
+    display: block;
+    text-align: center;
+}
+.abpic{
+    max-width:50%;
+    background-position: auto;
+    position: absolute;
+    padding-top: 0px;
+    width: 30%;
+    height: 50%;
+    left: 23rem;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+.cont p{
+    font-size:1.5rem;
+    display:flex;
+    justify-content:space-between;
+    padding-right:60rem;
+    margin-top:10px;
+    text-align:justify;
+}
+.cont li{
+    font-size:1.5rem;
+    display:flex;
+    justify-content:space-between;
+    padding-right:60rem;
+    margin-top:10px;
+    text-align:left;
+}
+.process{
+    margin-top:25px;
+    color:orangered;
+    font-size:3rem;
+    top: -20px;
+    padding-right:60rem;
+    display: block;
+    text-align: center;
+}
+.dpic{
+    max-width: 50%; 
+    background-position: right; 
+    position: absolute; 
+    padding-left: 0; 
+    width: 35%; 
+    height: 65%; 
+    right: 15rem;
+}
+.but{
+    display:block;
+    margin-top:1rem;
+    margin-right:50%;
+    width:10%;
+    border-radius:5rem;
+    background:orangered;
+    color:white;
+    padding:.9rem 3.5rem;
+    font-size:1.7rem;
+}
+.but:hover{
+    background: orange;
+}
+.con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.con p{
+    font-size:1.5rem;
+    display:flex;
+    justify-content:space-between;
+    padding-left:65rem;
+    margin-top:10px;
+    text-align:justify;
+}
+.find{
+    margin-top:100px;
+    color:orangered;
+    font-size:3rem;
+    top: -20px;
+    padding-left:65rem ;
+    display: block;
+    text-align: center;
+}
+.dopic{
+    max-width:50%;
+    background-position: auto;
+    position: absolute;
+    padding-top: 0px;
+    width: 40%;
+    height: 50%;
+}
+.butt{
+    display:block;
+    margin-top:1rem;
+    margin-left:50%;
+    width:13%;
+    border-radius:5rem;
+    background:orangered;
+    color:white;
+    padding:.9rem 3.5rem;
+    font-size:1.7rem;
+}
+.butt:hover{
+    background: orange;
+}
+.c{
+    margin-top:60px;
+    color:orangered;
+    font-size:3rem;
+    top: -20px;
+    padding-right:60rem;
+    display: block;
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+.row {
+    margin-top:15px;
+    width: 100%;
+    max-width: 600px;
+}
+.box {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+.button {
+    display:block;
+    margin-top:1rem;
+    margin-right:50%;
+    width:20%;
+    border-radius:5rem;
+    background:orangered;
+    color:white;
+    padding:.9rem 3.5rem;
+    font-size:1.7rem;
+}
+.button:hover {
+    background: orange;
+}
+.cpic{
+    max-width: 50%; 
+    background-position: right; 
+    position: absolute; 
+    padding-left: 0; 
+    width: 35%; 
+    height: 65%; 
+    right: 15rem;
+}
+@media(max-width:991px){
+    html{
+      font-size:55%;  
+    }
+    header{
+        padding:2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+</style>
 </head>
-
 <body>
     <header>
         <a href="#" class="logo"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvSJwApYUgAZgbirRxoZF8WoXqemkz6HJUM7Z2H-wqKk7EMOXS" class="log">GeneHarvest</a>
-
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#home">Home</a>
@@ -22,19 +328,14 @@
             </ul>
         </nav>
     </header>
-
-
 <section class="home" id="home">
     <div class="content">
         <h3>Welcome to GeneHarvest</h3>
-        <img src="https://github.com/roche-jeethan/Sceptix-Mark-I/blob/main/Capture.PNG?raw=true" class="cover">
         <span>Help others while fulfilling your desire to become a parent.</span>
+        <img src="https://github.com/roche-jeethan/Sceptix-Mark-I/blob/main/SPERM.png?raw=true" class="cover">
         <a href="https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/Login%20Sign%20up%20Page.html" class="btn">Join Now</a>
     </div>
 </section>
-
-
-
 <section class="about" id="aboutus">
     <img src="https://img.freepik.com/free-vector/website-faq-section-user-help-desk-customer-support-frequently-asked-questions-problem-solution-quiz-game-confused-man-cartoon-character_335657-1602.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais" class="abpic">
     <h1 class="heading"><span>About Us</span></h1>
@@ -50,10 +351,6 @@
              come together to make your parenthood dreams a reality.</p>
     </div>
 </section>
-
-
-
-
 <section class="donate" id="donate">
     <img src="https://img.freepik.com/premium-vector/sperm-donation-semen-donor-vector-image_353502-506.jpg" class="dpic">
     <h1 class="process"><span>Process for Donation</span></h1>
@@ -68,10 +365,6 @@
         <a href="#" class="but">Donate</a>
     </div>
 </section>
-
-
-
-
 <section class="donor" id="donor">
     <img src="https://img.freepik.com/free-vector/tiny-people-planning-baby-flat-vector-illustration-cartoon-embryo-development-human-healthy-reproduction-symbolic-visualization-fertility-parenthood-concept_74855-10171.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1701561600&semt=ais" class="dopic">
     <h1 class="find"><span>Looking for Donor?</span></h1>
@@ -82,9 +375,6 @@
         <a href="https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/profiles.html" class="butt">Find Donor</a>
     </div>
 </section>
-
-
-
 <section class="contact" id="contact">
     <h1 class="c"><span>Contact Us</span></h1>
     <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?size=338&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais" class="cpic">
@@ -98,7 +388,5 @@
                 </form>
         </div>
 </section>
-
-
 </body>
 </html>
