@@ -26,6 +26,8 @@ links.forEach(link => { link.addEventListener
         if(enterEmail==getEmail){
             if(enterPassword==getPassword){
                 alert('Login Successfull');
+                //window.location = 'https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/profiles.html';
+window.location = 'https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/profiles.html';
             }
             else{
                 alert('Wrong Password! Try Again');
