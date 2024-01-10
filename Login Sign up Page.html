@@ -6,18 +6,15 @@
         <title>Login and Signup Form </title>
         <link rel="stylesheet" href="sceptix.css">
     </head>
-
-
-
     <body>
         <section class="container forms">
             <!-- Login Form -->
             <div class="form login">
                 <div class="form-content">
                     <header>Login</header>
-                    <form action="">
+                    <form>
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input" id="email">
+                            <input type="email" placeholder="E-mail" class="input" id="email">
                         </div>
                         <div class="field input-field">
                             <input type="password" placeholder="Password" class="password_lg" id="password">
@@ -26,42 +23,47 @@
                             <a href="#" class="forgot-pass">Forgot password?</a>
                         </div>
                         <div class="field button-field">
-                            <button id="loginButton" onclick="checkData()" location.href='https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/Landing%20Page.html'>Login</button>
+                            <button id="loginButton" onclick="checkData()" onclick="window.location.href='https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/profiles.html'">Login</button>
                         </div>
                     </form>
                     <div class="form-link">
                         <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
                     </div>
                 </div>
-                <div class="line"></div>
-                
+                <div class="line"></div>     
                 <div class="media-options">
-                    <a href="#" class="field google">
-                        
+                    <a href="https://accounts.google.com/servicelogin?hl=en-gb" class="field google">
                         <span>Login with Google</span>
                     </a>
                 </div>
+                <footer>
+                    <p>&copy; 2024 Sperm Donation Website</p>
+                </footer>
             </div>
-
-
-
-
             <!-- Signup Form -->
             <div class="form signup">
                 <div class="form-content">
                     <header>Signup</header>
-                    <form action="">
+                    <form>
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" id="inputEmail" class="input">
+                            <input type="text" placeholder="Full Name" id="inputname" class="input">
                         </div>
                         <div class="field input-field">
-                            <input type="password" placeholder="Create password" id="inputPassword" class="password_sg">
+                            <input type="text" placeholder="Mobile Number" id="inputnumber" class="input">
+                        </div>
+                        <div class="field input-field">
+                            <input type="email" placeholder="E-mail" id="inputEmail" class="input">
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create Password" id="inputPassword" class="password_sg">
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm Password" id="inputPassword" class="password_sg">
                         </div>
                         <div class="field button-field">
-                            <button id="signupButton" onclick="window.location.href='https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/Landing'" >Signup</button>
+                            <button id="signupButton" onclick="location.href = 'https://raw.githack.com/roche-jeethan/Sceptix-Mark-I/main/Landing'" >Signup</button>
                         </div>
                     </form>
-            
                     <div class="form-link">
                         <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
                     </div>
@@ -69,15 +71,16 @@
                 <div class="line"></div>
                             
                 <div class="media-options">
-                    <a href="#" class="field google">
+                    <a href="https://accounts.google.com/servicelogin?hl=en-gb" class="field google">
                         <img src="">
                         <span>Login with Google</span>
                     </a>
                 </div>
+                <footer>
+                    <p>&copy; 2024 Sperm Donation Website</p>
+                </footer>
             </div>
-            
             <script src="sceptix.js"></script>
+            </section>
     </body>
-
-
 </html>
