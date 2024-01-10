@@ -1,5 +1,6 @@
 # Sceptix Mark-I
-# Link to GeneHarvest
+
+## Link to GeneHarvest
 https://geneharvest.tiiny.site/
 ### Preface
 This is our first Git Repository and want to learn more about GitHub! by creating a project for recruitment process for SCEPTIX
