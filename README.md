@@ -3,7 +3,7 @@
 This is our first Git Repository and want to learn more about GitHub! by creating a project for recruitment process for SCEPTIX
 
 ### About this project:
-
+This project is about helping couples to grow as a family by finding the right sperm donors. This website provides the exact data of the donors as well as provides a platform for donors to contribute sperms. We believe in making dreams come true to bring parenthood into reality!
 
 
 ### People Building this project
