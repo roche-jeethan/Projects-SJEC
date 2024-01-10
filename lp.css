@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 :root{
     --lightblue:blue;
 }
-
 *{
     margin:0;
     padding:0;
@@ -15,15 +13,12 @@
     text-transform: capitalize;
     transition:.2s linear;
 }
-
 html{
     font-size:62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
-
-
 header{
     position:fixed;
     top:0;
@@ -37,59 +32,46 @@ header{
     z-index:1000;
     box-shadow:0.5rem .1rem rgba(0,0,0,.1) 
 }
-
 .log{
     width:50px;
     float:left;
 }
-
 header .logo{
     font-size:3rem;
     color: black;
     font-weight: bolder;
 }
-
 header .logo span{
     color:var(--lightblue);
 }
-
 .nav-list {
     display: flex;
     list-style-type: none;
     padding: 0;
 }
-
 .nav-item {
     margin-right: 3rem; 
 }
-
 .nav-item a {
     text-decoration: none;
     color: black;
 }
-
 header .navbar a{
     font-size:2rem;
     padding:0 .5rem;
     color:black;
 }
-
 header .navbar a:hover{
     color:var(--lightblue);
 }
-
 section{
     padding:2rem 9%;
 }
-
 .home{
     display:flex;
     align-items:center;
     min-height:100vh;
-    background: linear-gradient(to bottom, white, lightblue);
-    column-gap: 30px;
 }
-
 .cover{
     position: absolute;
     top: 0px;
@@ -102,7 +84,6 @@ section{
     background-repeat: no-repeat;
 
 }
-
 .home .content{
     max-width:50rem;
     }
@@ -111,14 +92,12 @@ section{
     font-size:6rem;
     color:black; 
 }
-
 .home .content span{
     font-size:3rem;
     color:var(--lightblue);
     padding:1rem 0;
     line height:1.5;
 }
-
 .btn{
     display:block;
     margin-top:1rem;
@@ -130,11 +109,9 @@ section{
     font-size:1.7rem;
 
 }
-
 .btn:hover{
     background: orange;
 }
-
 .content{
     display: flex;
     justify-content: space-between;
@@ -149,7 +126,6 @@ section{
     margin-top:10px;
     text-align:justify;
 }
-
 .heading span{
     margin-top:10px;
     color:orangered;
@@ -159,7 +135,6 @@ section{
     display: block;
     text-align: center;
 }
-
 .abpic{
     max-width:50%;
     background-position: auto;
@@ -169,8 +144,6 @@ section{
     height: 50%;
     left: 23rem;
 }
-
-
 .cont{
     display: flex;
     justify-content: space-between;
@@ -185,7 +158,6 @@ section{
     margin-top:10px;
     text-align:justify;
 }
-
 .cont li{
     font-size:1.5rem;
     display:flex;
@@ -194,7 +166,6 @@ section{
     margin-top:10px;
     text-align:left;
 }
-
 .process{
     margin-top:25px;
     color:orangered;
@@ -204,7 +175,6 @@ section{
     display: block;
     text-align: center;
 }
-
 .dpic{
     max-width: 50%; 
     background-position: right; 
@@ -214,8 +184,6 @@ section{
     height: 65%; 
     right: 15rem;
 }
-
-
 .but{
     display:block;
     margin-top:1rem;
@@ -227,17 +195,9 @@ section{
     padding:.9rem 3.5rem;
     font-size:1.7rem;
 }
-
 .but:hover{
     background: orange;
 }
-
-
-
-
-
-
-
 .con{
     display: flex;
     justify-content: space-between;
@@ -252,7 +212,6 @@ section{
     margin-top:10px;
     text-align:justify;
 }
-
 .find{
     margin-top:100px;
     color:orangered;
@@ -262,7 +221,6 @@ section{
     display: block;
     text-align: center;
 }
-
 .dopic{
     max-width:50%;
     background-position: auto;
@@ -271,7 +229,6 @@ section{
     width: 40%;
     height: 50%;
 }
-
 .butt{
     display:block;
     margin-top:1rem;
@@ -283,15 +240,9 @@ section{
     padding:.9rem 3.5rem;
     font-size:1.7rem;
 }
-
 .butt:hover{
     background: orange;
 }
-
-
-
-
-
 .c{
     margin-top:60px;
     color:orangered;
@@ -301,20 +252,17 @@ section{
     display: block;
     text-align: center;
 }
-
 .contact {
     display: flex;
     justify-content: space-between;
     align-items: left;
     flex-direction: column;
 }
-
 .row {
     margin-top:15px;
     width: 100%;
     max-width: 600px;
 }
-
 .box {
     display: block;
     width: 100%;
@@ -324,7 +272,6 @@ section{
     outline: none;
     font-size: 14px;
 }
-
 .button {
     display:block;
     margin-top:1rem;
@@ -336,12 +283,9 @@ section{
     padding:.9rem 3.5rem;
     font-size:1.7rem;
 }
-
 .button:hover {
     background: orange;
 }
-
-
 .cpic{
     max-width: 50%; 
     background-position: right; 
@@ -351,8 +295,7 @@ section{
     height: 65%; 
     right: 15rem;
 }
-
-@media(max-width:960px){
+@media(max-width:991px){
     html{
       font-size:55%;  
     }
@@ -365,21 +308,11 @@ section{
         padding:2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    padding: 20px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
